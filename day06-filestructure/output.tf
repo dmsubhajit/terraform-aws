@@ -1,0 +1,10 @@
+output "vpc_id" {
+  value = aws_vpc.demo_vpc.id
+}
+
+output "ec2_id" {
+    value = aws_instance.demo_instance.id
+}
+output "environment" {
+    value = local.env
+}
